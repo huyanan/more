@@ -9,7 +9,8 @@ git clone https://github.com/huyanan/more.git
 
 ## Useage
 
-more(wrap,item,max,toggleButton);
+ more(wrap,item,max,toggleButton);
+ Like more($('.wrap'),'.item',6,null);
 
 ## Params
 
@@ -29,9 +30,39 @@ more(wrap,item,max,toggleButton);
 3. Like: 6
 
 ### ToggleButton
+default $('<button class="lookmore compress btn">See More</button>');
 1. Type: jQuery Elements
 2. Describe: Button for folding content
 3. Like: $('<button class="myclass">See More</button>')
+
+## Button Style
+`
+/**
+ * Normal Button styles
+ **/
+.btn{
+  
+}
+/**
+ * See More Button styles
+ **/
+.lookmore{
+ //background-color:blue;
+}
+/**
+ * Button styles on compress
+ **/
+.lookmore.compress{
+ background-image:url(compress.jpg);
+}
+/**
+ * Button styles on expand
+ **/
+.lookmore.expand{
+ background-image:url(expand.jpg);
+}
+`
+If you pass the toggleButton,please change styles with you className;
 
 ## Run the demo
 
@@ -39,6 +70,10 @@ You need a server like APACHE
 Please visit the Url
 http://localhost/more/demo/more.html
 
+## TODO
+
+1. Use the [jquery - boilerplate](https://github.com/jquery-boilerplate) refactoring plug-in
+
 ## License
 
-MIT License
+[MIT License](http://zenorocha.mit-license.org/) © Zeno Rocha
