@@ -9,8 +9,8 @@ git clone https://github.com/huyanan/more.git
 
 ## Useage
 
- more(wrap,item,max,toggleButton);
- Like more($('.wrap'),'.item',6,null);
+* more(wrap,item,max,toggleButton);
+* Like more($('.wrap'),'.item',6,null);
 
 ## Params
 
@@ -36,32 +36,31 @@ default $('<button class="lookmore compress btn">See More</button>');
 3. Like: $('<button class="myclass">See More</button>')
 
 ## Button Style
-`
-/**
- * Normal Button styles
- **/
-.btn{
-  
-}
-/**
- * See More Button styles
- **/
-.lookmore{
- //background-color:blue;
-}
-/**
- * Button styles on compress
- **/
-.lookmore.compress{
- background-image:url(compress.jpg);
-}
-/**
- * Button styles on expand
- **/
-.lookmore.expand{
- background-image:url(expand.jpg);
-}
-`
+
+    /**
+     * Normal Button styles
+     **/
+    .btn{
+      
+    }
+    /**
+     * See More Button styles
+     **/
+    .lookmore{
+     //background-color:blue;
+    }
+    /**
+     * Button styles on compress
+     **/
+    .lookmore.compress{
+     background-image:url(compress.jpg);
+    }
+    /**
+     * Button styles on expand
+     **/
+    .lookmore.expand{
+     background-image:url(expand.jpg);
+    }
 If you pass the toggleButton,please change styles with you className;
 
 ## Run the demo
