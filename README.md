@@ -30,10 +30,10 @@ git clone https://github.com/huyanan/more.git
 3. Like: 6
 
 ### ToggleButton
-default $('<button class="lookmore compress btn">See More</button>');
-1. Type: jQuery Elements
-2. Describe: Button for folding content
-3. Like: $('<button class="myclass">See More</button>')
+1. default $('<button class="lookmore compress btn">See More</button>');
+2. Type: jQuery Elements
+3. Describe: Button for folding content
+4. Like: $('<button class="myclass">See More</button>')
 
 ## Button Style
 
